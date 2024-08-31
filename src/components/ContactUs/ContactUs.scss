@@ -1,0 +1,5 @@
+@import "../SCSS/common.scss";
+
+#contact_us_container {
+	@include page_defaults();
+}

@@ -1,0 +1,35 @@
+$purple: #564787;
+$light_blue: #f2fdff;
+$blue: #5724ff;
+$header_height: 51px;
+
+@mixin page_defaults {
+  min-height: 100vh;
+  background-color: $purple;
+  padding: 5rem 0;
+}
+
+@mixin h1_defaults {
+  font-size: 5em;
+}
+
+@mixin button_defaults {
+  padding: 1em 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $purple;
+  text-decoration: none;
+  color: $purple;
+  font-size: 1.1em;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: $blue;
+    border: 2px solid $blue;
+    color: $light_blue;
+    font-weight: 900;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,32 @@
+@import "../SCSS/common.scss";
+
+#header_Container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100vw - 2rem);
+	overflow: hidden;
+	background-color: transparent;
+	padding: 1rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	gap: 1rem;
+
+	a {
+		color: $light_blue;
+		font-weight: 500;
+		text-decoration: none;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			scale: 1.1;
+			color: $blue;
+		}
+	}
+
+	button {
+		@include button_defaults();
+	}
+}

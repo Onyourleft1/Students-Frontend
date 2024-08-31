@@ -1,0 +1,26 @@
+@import "../../SCSS/common.scss";
+
+#cart_card_container {
+  background-color: $light_blue;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    @include button_defaults();
+  }
+
+  h6 {
+    font-size: 14px;
+    font-weight: 500;
+
+    span {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-right: 1em;
+    }
+  }
+}

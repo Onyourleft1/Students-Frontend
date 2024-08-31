@@ -1,0 +1,21 @@
+@import "../../SCSS/common.scss";
+
+#gallery_container {
+	min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	color: $light_blue;
+
+	h2 {
+		font-size: 3em;
+	}
+	#container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+}

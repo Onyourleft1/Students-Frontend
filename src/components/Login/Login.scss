@@ -1,0 +1,45 @@
+@import "../SCSS/common.scss";
+
+#login_container {
+	@include page_defaults();
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	h1 {
+		color: $light_blue;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 1rem;
+		width: 50vw;
+
+		div {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			gap: 0.5rem;
+
+			label {
+				color: $light_blue;
+				font-size: 1.5em;
+			}
+
+			input {
+				width: 45vw;
+				padding: 1rem;
+				border-radius: 20px;
+			}
+
+			button {
+				@include button_defaults();
+			}
+		}
+	}
+}

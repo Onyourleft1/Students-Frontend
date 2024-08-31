@@ -1,0 +1,40 @@
+@import "../../../SCSS/common.scss";
+
+#card_container {
+	background-color: $light_blue;
+	color: $purple;
+	padding: 1rem;
+	border-radius: 20px;
+	max-width: 300px;
+
+	img {
+		width: 100%;
+		aspect-ratio: 1;
+		object-fit: cover;
+		border-radius: 20px;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	h4 {
+		font-weight: 900;
+		font-size: 1.5em;
+		text-transform: capitalize;
+		color: $purple;
+
+		&:hover {
+			cursor: pointer;
+			color: $blue;
+		}
+	}
+
+	h5 {
+		font-size: 1.1em;
+	}
+
+	a {
+		@include button_defaults();
+	}
+}

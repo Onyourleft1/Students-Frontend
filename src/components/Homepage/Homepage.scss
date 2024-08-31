@@ -1,0 +1,9 @@
+@import "../SCSS/common.scss";
+
+#homepage_container {
+	@include page_defaults();
+
+	h1 {
+		margin: 0;
+	}
+}

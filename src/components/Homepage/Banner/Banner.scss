@@ -1,0 +1,13 @@
+@import "../../SCSS/common.scss";
+
+#banner_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 50vh;
+
+	h1 {
+		@include h1_defaults();
+		color: $light_blue;
+	}
+}
